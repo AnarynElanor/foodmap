@@ -1,0 +1,109 @@
+html, body{
+	width: 100%; 
+	height: 100%;
+}
+
+.container-fluid{
+	width: 100%;
+	height: 640px;
+
+}
+
+.splash-back{
+	max-width: 1900px; 
+	width: 100%;
+	min-height: 640px;
+	background: radial-gradient(#FFB600 5%, #FF8C00 20%, #FF6E00 55%); ;
+}
+
+.splash-row{
+
+	padding-top: 45%;
+	
+}
+
+.name{
+	color: #71339A;
+	font-size: 60px; 
+	font-family: 'Pacifico', cursive;
+	padding: 10%;
+	text-shadow: -2px 0 yellow, 0 2px yellow, 2px 0 yellow, 0 -2px yellow;
+}
+
+.name-main{
+	margin-top: 0; 
+	margin-bottom: 0;
+	padding-top: 5%;
+	padding-bottom: 2%;
+	font-size: 40px; 
+
+}
+.appname{
+	margin-top: 0; 
+	padding: 0;
+}
+.separator{
+	height: 0px;
+	border-width: 0 0 4px 0;
+	border-style: solid;
+	border-color:  yellow/*#FF0554*/;
+	margin-bottom: 3%;
+	margin-top: 0;  
+	padding: 0;
+}
+
+.map{
+
+	width: 250px;
+	border-width: 1px;
+	border-color: white;
+	border-style: solid;
+	padding: 2%;
+	margin: 2% 2% 2% 2%;
+}
+
+.slogan{
+	color: #FF0554;	
+	font-family: 'Lobster', cursive;	
+}
+
+.look {
+	color: #71339A; 
+	font-size: 15px;
+}
+
+.btn-group{
+	padding-top: 5%;
+	
+}
+
+.btn{
+	background-color: #FF0554; 
+	color: #FFFFFF;
+}
+
+.content-display{
+	margin-top: 4%;
+	width: 280px;
+	height: 210px;
+	background-color: #2B2B2B;
+}
+
+.restaurant-img{
+
+	width: 100%;
+	
+}
+
+.display-row{
+	margin-top: 5%;
+	height: 40%;
+	color: #71339A;
+}
+
+.display-img{	
+	width: 100%;
+	height: 100%;
+
+	
+}

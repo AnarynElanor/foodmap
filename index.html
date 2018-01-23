@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name ="viewport" content="width=device-width, initial-scale= 1.0, maximum-scale=1">
+		<title>Fast Munchies</title> <!--  -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico|Shrikhand" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head> 
+
+
+	<body>
+
+		<!-- Sección para el splash -->
+		<section id="splash"> <!-- Con este id, llamamos al elemento de inicio para el splash-->
+			<div class="container-fluid splash-back">
+				<div class="row splash-row align-items-center">
+					<div class="col-md-12 justify-content-md-center text-center">
+						<h1 class="text-center name">Fast Munchies!</h1>
+					</div>					
+				</div> 
+			</div>			
+		</section>
+
+		<!-- Sección principal -->
+		<section id="main" style="display:none;"> <!-- Con este otro id llamamos esta seccción que aparece oculta con el display none de inicio -->
+			<div class="container-fluid splash-back">
+				<div class="content-header">
+					<div class="appname">
+					<h1 class="text-center name name-main">Fast Munchies!</h1> <!-- Logo de la app -->
+					</div>
+					<div class="separator">
+						
+					</div>
+				</div>
+				<div class="text-center">
+					<div class="col-md-6 col-md-offset-3 slogan"> <!-- div del slogan, centrado -->
+					 <h4>¡Rápido, delicioso y a tu hogar!</h4></div> 
+					<center>						
+						<div class="map"> <!-- Aquí va el mapa-->
+							<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15057.0684642101!2d-99.1179467!3d19.3575833!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1515807493858" width="100%" height="125px" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>						
+					</center>
+				</div>	
+				<div class="content-filter">
+					<div class="text-center"> <!-- Div con título de busqueda -->	
+						<span class="look"><strong>Buscar ahora: <strong></span> 				
+					</div> 
+					<div class="row"> <!-- Aquí se declara una fila para insertar los filtros -->	
+						<div class="col-xs-10 col-xs-offset-1 filter">
+							<div class="input-group"> <!-- filtro uno ingresando letras -->	
+					            <input type="text" class="form-control" id="search" placeholder="Ingresa un nombre...">
+					            <span class="input-group-btn">
+					                  <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true" ></i></button>
+					                </span>
+					        </div>
+							<div class="input-group mb-3"> <!-- Filtro dos, seccionado por sugerencia de tipo de comida, precio y zona -->	
+							  <div class="input-group-prepend">
+								    <div class="btn-group col-xs-offset-4">
+									  <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ... o selecciona un filtro <span class="caret"></span>
+									  </button>
+									  <ul class="dropdown-menu">
+										    <li><strong>Tipo de cocina</strong></li>
+										    <li><a href="#">Mexicana</a></li>
+										    <li><a href="#">Italiana</a></li>
+										    <li><a href="#">Japonesa</a></li>
+										    <li><a href="#">Francesa</a></li>										   
+										    <li><strong>Zona</strong></li>
+										    <li><a href="#">Norte</a></li>
+										    <li><a href="#">Sur</a></li>
+										    <li><a href="#">Poniente</a></li>
+										    <li><a href="#">Oriente</a></li>										    
+										    <li><strong>Precio</strong></li>
+										    <li><a href="#">$$$</a></li>
+										    <li><a href="#">$$</a></li>
+										    <li><a href="#">$</a></li>										    							   
+									  </ul>
+									</div>
+							  </div>							 
+							</div>					
+						</div>		
+					</div>							
+				</div>
+				<div class="container-fluid content-display">
+					<div class="restaurant-img">
+						<div class="row display-row text-center">
+							<div class="col-xs-4 ">
+								 <img class="display-img" src="http://dummyimage.com/80x80">
+								 <p> Name</p>
+							</div>
+							<div class="col-xs-4">
+								<img class="display-img" src="http://dummyimage.com/80x80">
+								 <p> Name</p>
+							</div>	
+							<div class="col-xs-4">
+								<img class="display-img" src="http://dummyimage.com/80x80">
+								 <p> Name</p>
+							</div>
+						</div>
+						<div class="row display-row text-center">
+							<div class="col-xs-4">
+								<img class="display-img" src="http://dummyimage.com/80x80">
+								 <p> Name</p>
+							</div>
+							<div class="col-xs-4">
+								<img class="display-img" src="http://dummyimage.com/80x80">
+								 <p> Name</p>
+							</div>	
+							<div class="col-xs-4">
+								<img class="display-img" src="http://dummyimage.com/80x80">
+								 <p> Name</p>
+							</div>						
+						</div>						
+					</div>						
+				</div>		
+			</div>
+		</section>
+
+		<!-- Modales -->
+
+		<section>
+			<div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		      <div class="modal-dialog" role="document">
+			        <div class="modal-content">
+			          <div class="modal-header">
+				            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				              <span aria-hidden="true">&times;</span>
+				            </button>
+			          </div>
+			          <div class="modal-body">
+			          		<div>
+			          			<h2 class="">Name Restaurant</h2>
+			          		</div>
+			          		<div class="map">
+			          		</div>
+			          		<div>
+			          			<h3>Restaurant Description</h3>
+			          		</div>
+			          		<div>
+			          			<div>Direccion</div>
+			          			<div>
+			          				<div>Precio</div>
+			          				<div> Servicio a domicilio</div>
+			          			</div>
+			          			
+			          		</div>
+			          		<div>
+			          			<button>Pedir Ahora</button>
+			          		</div>				            
+			          </div>
+			        </div>
+		      </div>
+		    </div>
+		</section>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+		<script type="text/javascript" src="js/app.js"></script> 
+	</body>
+</html>
