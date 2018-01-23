@@ -87,29 +87,29 @@
 					<div class="restaurant-img">
 						<div class="row display-row text-center">
 							<div class="col-xs-4 ">
-								 <img class="display-img" src="http://dummyimage.com/80x80">
+								 <a href="#" data-toggle="modal" data-target="#restaurant-info"><img class="display-img" src="http://dummyimage.com/80x80"></a>
 								 <p> Name</p>
 							</div>
 							<div class="col-xs-4">
-								<img class="display-img" src="http://dummyimage.com/80x80">
+								 <a href="#" data-toggle="modal" data-target="#restaurant-info"><img class="display-img" src="http://dummyimage.com/80x80"></a>
 								 <p> Name</p>
 							</div>	
 							<div class="col-xs-4">
-								<img class="display-img" src="http://dummyimage.com/80x80">
+								 <a href="#" data-toggle="modal" data-target="#restaurant-info"><img class="display-img" src="http://dummyimage.com/80x80"></a>
 								 <p> Name</p>
 							</div>
 						</div>
 						<div class="row display-row text-center">
 							<div class="col-xs-4">
-								<img class="display-img" src="http://dummyimage.com/80x80">
+								 <a href="#" data-toggle="modal" data-target="#restaurant-info"><img class="display-img" src="http://dummyimage.com/80x80"></a>
 								 <p> Name</p>
 							</div>
 							<div class="col-xs-4">
-								<img class="display-img" src="http://dummyimage.com/80x80">
+								 <a href="#" data-toggle="modal" data-target="#restaurant-info"><img class="display-img" src="http://dummyimage.com/80x80"></a>
 								 <p> Name</p>
 							</div>	
 							<div class="col-xs-4">
-								<img class="display-img" src="http://dummyimage.com/80x80">
+								 <a href="#" data-toggle="modal" data-target="#restaurant-info"><img class="display-img" src="http://dummyimage.com/80x80"></a>
 								 <p> Name</p>
 							</div>						
 						</div>						
@@ -121,39 +121,46 @@
 		<!-- Modales -->
 
 		<section>
-			<div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal fade" id="restaurant-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		      <div class="modal-dialog" role="document">
 			        <div class="modal-content">
 			          <div class="modal-header">
 				            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				              <span aria-hidden="true">&times;</span>
 				            </button>
+				            <h2 class="">Name Restaurant</h2>
 			          </div>
-			          <div class="modal-body">
-			          		<div>
-			          			<h2 class="">Name Restaurant</h2>
-			          		</div>
+			          <div class="modal-body">		          			
 			          		<div class="map">
+			          			<center>
+			          				<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15057.0684642101!2d-99.1179467!3d19.3575833!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1515807493858" width="100%" height="150px" frameborder="0" style="border:0" allowfullscreen></iframe>
+			          			</center>
 			          		</div>
 			          		<div>
-			          			<h3>Restaurant Description</h3>
+			          			<center>
+			          				<h3>Restaurant Description</h3>
+			          			</center>			          			
 			          		</div>
-			          		<div>
-			          			<div>Direccion</div>
-			          			<div>
+			          		<div class="row">
+			          			<div class="col-xs-4">Direccion</div>
+			          			<div class="row">
 			          				<div>Precio</div>
 			          				<div> Servicio a domicilio</div>
 			          			</div>
 			          			
 			          		</div>
 			          		<div>
-			          			<button>Pedir Ahora</button>
+			          			<center>
+			          				<button class="btn btn-default btn-lg dr" type="button" data-toggle="" aria-haspopup="true" aria-expanded=""> Pedir ahora</button>
+			          			</center>			          			
 			          		</div>				            
 			          </div>
 			        </div>
 		      </div>
 		    </div>
 		</section>
+
+
 
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
