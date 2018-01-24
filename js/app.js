@@ -1,17 +1,51 @@
-$(document).ready(function() {
-
+/*
   setTimeout(function() {
-        $("#splash").fadeOut(500);
-    },3000); /*oculta la pantalla inicial*/
-    setTimeout(function() {
-        $("#main").fadeIn(500);
-    },3000); /*Muestra la pantalla Principal*/
-});
+	    $("#splash").fadeOut(500);
+	},3000); /*oculta la pantalla inicial
+	setTimeout(function() { /*Muestra la pantalla Principal
+	    $("#main").fadeIn(500);
+	},3000);
+    
+
+    paintRestaurantsHtml();
+
+
+
+
+});*/
+
+
+function loadPage() {
+
+	setTimeout(function() {
+	    $("#splash").fadeOut(500);
+	},3000); /*oculta la pantalla inicial*/
+	setTimeout(function() { /*Muestra la pantalla Principal*/
+	    $("#main").fadeIn(500);
+	},3000);
+    
+
+    paintRestaurantsHtml(data);
+
+}
+
 
 
 
 function paintRestaurantsHtml (restaurant) {
-  // crear elementos con DOM
+
+  for(var i=0; i<= restaurant.length-1; i++){
+
+  	console.log(restaurant[i]);
+
+  }
+
+
+
+
+
+
+  /*// crear elementos con DOM
   var $restaurant = $("<article />", {
     "class": "panel panel-default"
   });
@@ -36,7 +70,7 @@ function paintRestaurantsHtml (restaurant) {
   // agregamos lo que creamos con el Dom a un elemento existente del html
 
 
-  $("#section-food").prepend($restaurant);
+  $("#section-food").prepend($restaurant);*/
   
 }
 
@@ -67,3 +101,10 @@ function filterOptions (){
 
   
 }
+
+
+
+
+
+
+$(document).ready(loadPage);
